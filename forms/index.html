@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,follow" />	
+<meta name="viewport" content="width=device-width">
+<title>資料請求フォーム</title>
+<link rel="stylesheet" href="style.css">
+<script type="text/javascript">
+    let submitted = false;
+</script>
+<iframe
+    name="hidden_iframe"
+    id="hidden_iframe"
+    style="display: none"
+    onload="if(submitted){window.location='thanks.html';}"
+></iframe>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GXBG2Z37CN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GXBG2Z37CN');
+</script>
+	
+</head>
+
+<body>
+<h2 style="text-align: center; margin: 40px auto">資料請求・<br class="sp">お問い合わせ</h2>
+<p style="text-align: center; margin: 40px auto"> 下記より必要事項をご入力のうえ送信をお願いします。</p>
+<form class="c-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeY74WyoKX-nHFoLOfkVWJY5dBLitcp19zq34H7PSbQVUYF2g/formResponse"
+  method="POST"
+    target="hidden_iframe"
+    onsubmit="submitted=true;"
+>
+	
+  <div class="c-form__item">
+    <label class="c-form__label" for="field-name"
+			>内容<span class="c-form__required">必須</span></label>
+ <input type="radio" name="entry.2091305958" value="資料請求" required>資料請求<br>
+  <input type="radio" name="entry.2091305958" value="お問い合わせ" required>お問い合わせ<br>
+<br>
+  </div>	
+	
+  <div class="c-form__item">
+    <label class="c-form__label" for="field-name"
+			>会社名<span class="c-form__required">必須</span></label
+		>
+    <input
+			name="entry.366430915"
+			class="c-form__input"
+			id="field-name"
+			placeholder="株式会社 山田"
+			type="text"
+			required="required"
+		/>
+  </div>
+  <div class="c-form__item">
+    <label class="c-form__label" for="field-mail"
+			>メールアドレス<span class="c-form__required">必須</span></label
+		>
+    <input
+			name="entry.1282123632"  
+			class="c-form__input"
+			id="field-mail"
+			placeholder="sample@gmail.com"
+			type="email"
+			required="required"
+		/>
+  </div>
+  <div class="c-form__item">
+    <label class="c-form__label" for="field-name"
+			>ホームページURL<span class="c-form__required">必須</span></label
+		>
+    <input
+			name="entry.1341512877"
+			class="c-form__input"
+			id="field-url"
+			placeholder="http://test.com/"
+			type="text"
+			required="required"
+		/>
+  </div>
+  <div class="c-form__item">
+    <label class="c-form__label" for="field-message">お問合せ内容</label>
+    <textarea
+			name="entry.1754680726"
+			class="c-form__input"
+			id="field-message"
+		></textarea>
+  </div>
+  <div class="c-form__submit">
+    <button type="submit">送信する</button>
+  </div>
+</form>
+</body>
+</html>

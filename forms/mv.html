@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>参考動画</title>
+    <meta name='robots' content='noindex,follow' />		
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #F9F8F3;
+        }
+        #video-container {
+            max-width: 1000px;
+            width: 100%;
+            margin: 0 auto; /* 中央揃えにする */
+            overflow: hidden;
+            padding: 0px; /* 左右に余白を追加 */
+        }
+        video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        h2 {
+            text-align: center; /* H2要素を中央揃えにする */
+			padding-left: 20px;
+				padding-right: 20px;	
+        }
+        p {
+            text-align: center;
+	margin: 20px;
+			font-size: 0.5em;
+			line-height: 2em;
+        }		
+		.pc {
+	display: none;	
+}
+.sp {
+	display: block;	
+}
+@media screen and (min-width: 768px) {
+.pc {
+	display: block;
+}
+.sp {
+	display: none;	
+}
+}		
+        /* スマートフォン用のメディアクエリ */
+        @media screen and (max-width: 767px) {
+            #video-container {
+                width: 100%;
+            }
+        }
+    </style>
+	
+        <!-- Google Analytics -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6Y9Q4SP3B3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6Y9Q4SP3B3');
+</script>
+        <!-- End Google Analytics -->	
+		
+</head>
+<body>
+	        <h2>参考動画<br class="sp">（ 2分 ）</h2>
+    <div id="video-container">
+
+        <video controls poster="thumbnail.jpg">
+            <source src="test.mp4" type="video/mp4">
+        </video>
+		<p>こちらは参考動画であるた当方の実績ではございませんが、同クオリティの動画制作が可能です。<br>
+当方の制作実績は、資料請求頂いた方へご提示させて頂きます。</p>
+    </div>
+</body>
+</html>
